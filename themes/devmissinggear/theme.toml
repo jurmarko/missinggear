@@ -1,5 +1,5 @@
 name = "DEV missing gear"
-description = "Herring Cove is ported from the jekyll theme of the same name"
+description = "Clone of Herring Cove"
 license = "MIT"
 tags = ["blog", "company"]
 
