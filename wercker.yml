@@ -3,11 +3,11 @@ build:
   steps:
     - arjen/hugo-build:
         version: 0.12
-        theme: herring-cove
+        theme: devmissinggear
         flags: --buildDrafts=true
 deploy:
   steps:
     - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
-        domain: jurmarko.github.io
+        domain: devmissinggear.com
         basedir: public
