@@ -1,0 +1,14 @@
+name = "DEV missing gear"
+description = "Herring Cove is ported from the jekyll theme of the same name"
+license = "MIT"
+tags = ["blog", "company"]
+
+[author]
+    name = "jurmarko"
+    homepage = "http://devmissinggear.com"
+
+# If Porting existing theme
+[original]
+    author =  "jurmarko"
+    repo = "http://www.github.com/jurmarko/devimissinggear"
+
