@@ -7,7 +7,19 @@ build:
         flags: --buildDrafts=true
 deploy:
   steps:
-    - lukevivier/gh-pages@0.2.1:
-        token: $GIT_TOKEN
-        domain: devmissinggear.com
-        basedir: public
+  - add-to-known_hosts:
+        hostname: devmissinggear.com
+   - mktemp:
+      envvar: PRIVATEKEY_PATH
+   - create-file:
+      name: write key
+      filename: $PRIVATEKEY_PATH
+      content: $FOO_PRIVATE
+      overwrite: true
+      hide-from-log: true
+   - script:
+      name: transfer application
+      code: |
+        pwd
+        ls -la
+        scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no digitalocean-test root@devmissinggear.com:/var/local/www
