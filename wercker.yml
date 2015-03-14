@@ -8,7 +8,7 @@ build:
 deploy:
   steps:
    - add-to-known_hosts:
-        hostname: devmissinggear.com
+        hostname: 188.166.50.134
    - mktemp:
       envvar: PRIVATEKEY_PATH
    - create-file:
