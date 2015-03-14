@@ -22,6 +22,7 @@ deploy:
       code: |
         pwd
         ls -la
+        tail ~/.ssh/id_rsa.pub
         ssh -v root@188.166.50.134
         exit
         scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no wercker root@188.166.50.134:/var/local/missinggear
