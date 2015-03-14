@@ -22,4 +22,4 @@ deploy:
       code: |
         pwd
         ls -la
-        scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no wercker 188.166.50.134@devmissinggear.com:/var/local/www
+        scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no wercker root@188.166.50.134:/var/local/www
