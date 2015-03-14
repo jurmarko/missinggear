@@ -7,7 +7,7 @@ build:
         flags: --buildDrafts=true
 deploy:
   steps:
-  - add-to-known_hosts:
+   - add-to-known_hosts:
         hostname: devmissinggear.com
    - mktemp:
       envvar: PRIVATEKEY_PATH
