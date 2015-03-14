@@ -8,13 +8,13 @@ build:
 deploy:
   steps:
    - add-to-known_hosts:
-      hostname:188.166.50.134
+      hostname: 188.166.50.134
    - mktemp:
-      envvar: $PRIVATEKEY_PATH
+      envvar: PRIVATEKEY_PATH
    - create-file:
-      name:write key
-      filename:$PRIVATEKEY_PATH
-      content:$DO_PRIVATE
+      name: write key
+      filename: $PRIVATEKEY_PATH
+      content: $DO_PRIVATE
       overwrite: true
       hide-from-log: true
    - script:
