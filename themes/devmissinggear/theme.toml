@@ -1,7 +1,7 @@
 name = "DEV missing gear"
 description = "Clone of Herring Cove"
 license = "MIT"
-tags = ["blog", "company"]
+tags = ["blog"]
 
 [author]
     name = "jurmarko"
