@@ -20,7 +20,7 @@ deploy:
    - script:
       name: transfer application
       code: |
-  pwd
+        pwd
          ls -la
 +        tail /var/log/auth.log
          scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no digitalocean root@188.166.50.134:/var/local/missinggear
