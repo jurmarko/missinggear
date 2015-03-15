@@ -1,0 +1,21 @@
+    <div class="panel panel-default">
+        <div class="panel-heading" style="padding: 2px 15px;">
+            <h4>Contact author</h4>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class = "contributor-profile" src="http://www.gravatar.com/avatar/{{ .Params.gravatar }}" />
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                       <h3>{{ .Params.author }}</h3>
+                    </div>
+                    <div class="row">
+                         <a href="https://github.com/{{ .Params.github }}" class="btn btn-primary btn-xs"><i class="fa fa-github-square fa-2x"></i></a>
+                         <a href="https://www.twitter.com/{{ .Params.twitter }}" class="btn btn-info btn-xs"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

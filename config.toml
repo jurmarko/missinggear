@@ -2,3 +2,4 @@ baseurl = "http://devmissinggear.com"
 canonifyurls = true
 languageCode = "en-us"
 title = "DevMissingGear Blog about software development"
+
