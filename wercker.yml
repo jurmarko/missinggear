@@ -23,5 +23,6 @@ deploy:
         pwd
         ls -la
         ssh -v root@188.166.50.134
+        tail /var/log/auth.log 
         exit
         scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no wercker root@188.166.50.134:/var/local/missinggear
