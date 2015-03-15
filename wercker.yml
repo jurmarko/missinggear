@@ -14,7 +14,7 @@ deploy:
    - create-file:
       name: write key
       filename: $PRIVATEKEY_PATH
-      content: $DO_PUBLIC
+      content: $DO_PRIVATE
       overwrite: true
       hide-from-log: true
    - script:
